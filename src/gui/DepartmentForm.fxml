@@ -35,8 +35,8 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="txtId" editable="false" GridPane.columnIndex="1" />
-            <TextField fx:id="txtName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtId" editable="false" promptText="Id do departamento..." GridPane.columnIndex="1" />
+            <TextField fx:id="txtName" promptText="Nome do departamento..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label fx:id="labelErrorName" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <padding>
                   <Insets left="20.0" />
@@ -47,8 +47,8 @@
             </Label>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <Button fx:id="btSave" mnemonicParsing="false" text="Salvar" />
-                  <Button fx:id="btCancel" mnemonicParsing="false" text="Cancelar" />
+                  <Button fx:id="btSave" mnemonicParsing="false" onAction="#onBtSaveAction" text="Salvar" />
+                  <Button fx:id="btCancel" mnemonicParsing="false" onAction="#onBtCancelAction" text="Cancelar" />
                </children>
             </HBox>
          </children>
